@@ -1,0 +1,12 @@
+@for(team of teams; track team.id; let i = $index){
+  <div class="teams">
+    <button type="button"
+    >
+      <span class="badge">{{i+1}}.</span>
+      <span class="name">{{team.name}}</span>
+      <img class="flag" [src]="team.flagPath">
+    </button>
+  </div>
+}
+
+

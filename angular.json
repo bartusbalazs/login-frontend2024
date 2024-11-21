@@ -62,7 +62,8 @@
               "buildTarget": "login-frontend:build:production"
             },
             "development": {
-              "buildTarget": "login-frontend:build:development"
+              "buildTarget": "login-frontend:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

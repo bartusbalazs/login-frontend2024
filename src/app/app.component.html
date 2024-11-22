@@ -2,7 +2,7 @@
   <app-login></app-login>
 }
 @if(loginService.isAuthenticated){
-  <div>
+  <div style="width: 80%;display: inline-block;">
     Welcome {{loginService.user?.username}}!
     You are {{loginService.user?.roles}}
     <div style="display: flex">
@@ -12,6 +12,7 @@
       }
     </div>
   </div>
+  <button style="float: right" (click)="loginService.logout()">Logout</button>
 }
 
 

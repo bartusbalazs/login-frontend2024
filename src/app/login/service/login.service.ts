@@ -46,7 +46,7 @@ export class LoginService {
 
   public logout(): void {
     this.http
-      .post<any>('api/logout', {})
+      .get<any>('api/auth/logout', {})
       .subscribe(() => this.resetUserData());
   }
 
